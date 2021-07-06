@@ -6,6 +6,7 @@ import {Row} from "react-bootstrap";
 const Menu = ({selectedCategory}) => {
   const [menu, setMenu] = useState(data);
 
+  // filter out items based on selected category when component renders or re-renders
   useEffect(() => {
     let filteredMenu = [];
     if (selectedCategory !== "All") {
@@ -16,6 +17,7 @@ const Menu = ({selectedCategory}) => {
     setMenu(filteredMenu);
   }, [selectedCategory]);
 
+  // render items
   const renderMenuItems = () => {
     return menu.map((item, index) => {
       return <Item {...item} key={index} />;

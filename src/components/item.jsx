@@ -2,7 +2,7 @@ import React from "react";
 import {Image, Media, Col} from "react-bootstrap";
 
 const Item = (props) => {
-  let {title, price, img, desc} = props;
+  let {title, price, img, desc} = props; // destructure properties
   return (
     <Col className="item" md={6}>
       <Media>

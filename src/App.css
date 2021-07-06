@@ -27,8 +27,14 @@
 }
 
 .nav-link.active {
-  background-color: #b94e48 !important;
+  border-bottom: 4px solid #b94e48 !important;
+  background: none !important;
+}
+
+.nav-item:hover > .nav-link.active {
   color: white !important;
+  background-color: #dc8787 !important;
+  border-bottom: 4px solid #dc8787 !important;
 }
 
 .nav-item:hover > .nav-link {
